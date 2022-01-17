@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Фильм{% endblock %}
+
+
+{% block content %}
+    {% if id == 1 %}
+        {% include 'movie1.html' with name=id %}
+    {% elif id == 2 %}
+        {% include 'movie2.html' with name=id %}
+    {% elif id == 3 %}
+        {% include 'movie3.html' with name=id %}
+    {% endif %}
+{% endblock %}
